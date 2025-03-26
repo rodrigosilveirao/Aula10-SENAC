@@ -1,0 +1,149 @@
+*{
+    margin: 5px;
+    padding: 2px;
+}
+
+.header1 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header1 h6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    height: auto;
+    position: sticky;
+    background-color: grey;
+}
+
+
+.header__nav{
+    display: flex;
+    
+}
+
+
+.header__nav a {
+    min-height: 30px;
+    text-decoration: none;
+    color: white;
+    flex: 1;
+    /* border-top: 2px solid white; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.header__nav a:hover{
+    background-color: rgb(33, 37, 41);
+}
+
+
+.main{
+    display: flex;
+    background-color: white;
+}
+
+.esquerda{
+    padding: 2px;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(248, 244, 244);
+ 
+}
+
+.direita{
+    justify-content: space-between;
+    padding: 2px;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(248, 244, 244);
+
+}
+
+
+.div__section{
+    
+    
+}
+
+.img{
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+}
+
+.div__contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contato{
+    width: 40%;
+}
+.input__contato{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    
+}
+
+
+
+#menu__button{
+    display: none;
+}
+label[for = 'menu__button']{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+@media (max-width: 650px) {
+    .header__nav{
+        flex-direction: column;
+        border-bottom: 1px solid white;
+        display: none;
+    }
+    .header__nav a{
+        border-bottom: 1px solid white;
+    }
+
+    label[for = 'menu__button']{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    #menu__button:checked ~ .header__nav{
+        display: block;
+    }
+
+    .main{
+        display: block;
+    
+    }
+
+    .esquerda{
+        width: 90%;
+    }
+
+    .direita{
+        width: 90%;
+    }
+}
+
+ 
