@@ -1,6 +1,9 @@
-*{
-    margin: 5px;
-    padding: 2px;
+:root{
+    --background: #000;
+    --font__color: #fff;
+    --details: purple;
+    --hover: gray;
+    
 }
 
 .header1 h1{
@@ -17,7 +20,9 @@
 .header{
     height: auto;
     position: sticky;
-    background-color: grey;
+    background-color: var(--background);
+    border-bottom: 3px solid var(--details);
+    margin-bottom: 10px;
 }
 
 
@@ -41,7 +46,7 @@
 }
 
 .header__nav a:hover{
-    background-color: rgb(33, 37, 41);
+    background-color: var(--hover);
 }
 
 
@@ -54,7 +59,7 @@
     padding: 2px;
     width: 80%;
     height: 100%;
-    background-color: rgb(248, 244, 244);
+    
  
 }
 
@@ -63,13 +68,21 @@
     padding: 2px;
     width: 20%;
     height: 100%;
-    background-color: rgb(248, 244, 244);
-
+    
+    margin-left: 5px;
 }
 
+.direita > div {
+    margin-bottom: 20px;
+    background-color: rgb(248, 244, 244);
+    padding: 20px;
+}
 
 .div__section{
-    
+    margin-bottom: 5px;
+    /* border: 1px solid red; */
+    background-color: rgb(248, 244, 244);
+    padding: 20px;
     
 }
 
@@ -138,11 +151,11 @@ label[for = 'menu__button']{
     }
 
     .esquerda{
-        width: 90%;
+        width: 100%;
     }
 
     .direita{
-        width: 90%;
+        width: 100%;
     }
 }
 
